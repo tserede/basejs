@@ -39,8 +39,7 @@ townName="Moskow";
 console.log(townName);*/
 
 const userData = {
-
-    name: "Ivan",
-    age: 34,
+  name: "Ivan",
+  age: 34,
 };
 console.log(typeof userData.name);
