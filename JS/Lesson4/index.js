@@ -61,6 +61,6 @@ if (t <= -30) {
     confirm.log ("Тепло");
 } else if (t>15&&t<=25) {
     console.log("Очень тепло");
-} else if (t>35) {
+} else {
     console.log ("Пекло");
 }
