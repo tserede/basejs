@@ -86,11 +86,46 @@ N=4;
 // for (i=0;i<N;i++) {
 //   console.log(str);
 // }
-while (true){
-  if(i<=N){
-    i+=1
-  } else {
-    break;
-  }
-  console.log(str);
+// while (true){
+//   if(i<=N){
+//     i+=1
+//   } else {
+//     break;
+//   }
+//   console.log(str);
+// }
+/*Работа с if-else  */
+/* Задача 1 */
+let a = 10;
+if(a = 0){
+  console.log("Верно");
+} else {
+  console.log("Неверно");
 }
+/* Задача 2 */
+let b=-3;
+if(b>0){
+  console.log("Верно");
+} else { console.log ("Неверно");
+}
+/* Задача 3 */
+let a3=-3
+if(a3<0){
+  console.log("Верно");
+} else {
+  console.log ("Неверно");
+}
+/* Зфдача 4 */
+let a4=1
+if (a>=0) {
+  console.log("Верно");
+} else {
+  console.log ("Неверно")
+}
+/* Задача 5 */
+
+/* Задача 6 */
+
+/* Задача 7 */
+
+/* Задача 8 */
