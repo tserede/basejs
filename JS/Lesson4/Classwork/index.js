@@ -1,9 +1,9 @@
-if (1){
-    console.log ("true");
-}
-if ("5") {
-    console.log ("false");
-}
+// if (1){
+//     console.log ("true");
+// }
+// if ("5") {
+//     console.log ("false");
+// }
 // const name="Alex3";
 // if(name==="Ivan"){
 //     console.log ( `Привет ${name}`);
@@ -96,3 +96,5 @@ while (true){
 }
 /*Работа с if-else  */
 /* Задача 1 */
+let a="gd";
+console.log(a);

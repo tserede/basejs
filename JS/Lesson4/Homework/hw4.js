@@ -107,3 +107,5 @@
 //   console.log("Верно");
 // } else {console.log ("Неверно");
 // }
+let a="fsfs";
+console.log(a);
