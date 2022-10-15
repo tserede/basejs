@@ -80,21 +80,22 @@
 //   }
 //    console.log(i);
 // }
-let str="Строка";
-i=1;
-N=4;
-for (i=0;i<N;i++) {
-  console.log(str);
-}
-while (true){
-  if(i<=N){
-    i+=1
-  } else {
-    break;
-  }
-  console.log(str);
-}
+// let str="Строка";
+// i=1;
+// N=4;
+// for (i=0;i<N;i++) {
+//   console.log(str);
+// }
+// while (true){
+//   if(i<=N){
+//     i+=1
+ 
+// }
 /*Работа с if-else  */
 /* Задача 1 */
 let a="gd";
 console.log(a);
+//  } else {
+//     break;
+//   }
+//   console.log(str);
