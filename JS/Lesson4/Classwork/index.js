@@ -1,7 +1,7 @@
-if (true){
+if (1){
     console.log ("true");
 }
-if ("fhsjs") {
+if ("5") {
     console.log ("false");
 }
 // const name="Alex3";
