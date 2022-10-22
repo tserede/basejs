@@ -51,39 +51,39 @@
 // }else console.log("false");
 // }
 // num(-6);
-// /*Задача 8*/
-// function isNumberRange(a) {
-//   if (a > 0 && a < 10) {
-//     return true;
-//   } else return false;
-// }
-// console.log(isNumberRange(5));
+/*Задача 8*/
+function isNumberRange(a) {
+  if (a > 0 && a < 10) {
+    return true;
+  } else return false;
+}
+console.log(isNumberRange(5));
 // /*Задача 9*/
 // let arr=[5,76,44,9,2,7,9];
 // function getArr{
 //   if isNumberRange=true
 // }
 /*Задача 10*/
-const getDigitsSum = (num) => {
-  const str=`${num}`;
-  let result=0;
-  for(let i=0; i<str.length; i+=1){
-    result+=+str[i];// = быстро переводит строку в число
-     }   return result;
+// const getDigitsSum = (num) => {
+//   const str=`${num}`;
+//   let result=0;
+//   for(let i=0; i<str.length; i+=1){
+//     result+=+str[i];// = быстро переводит строку в число
+//      }   return result;
     
-}
-console.log(getDigitsSum(678));
-/*Задача 11*/
-const filterYears=()=>{
-  let result=[];
-  for(let i=1; i<=2020; i+=1){
+// }
+// console.log(getDigitsSum(678));
+// /*Задача 11*/
+// const filterYears=()=>{
+//   let result=[];
+//   for(let i=1; i<=2020; i+=1){
     
-  }
+//   }
 
-}
-/*Задача 12*/
-/*Задача 13*/
-/*Задача 14*/
-/*Задача 15*/
-/*Задача 16*/
+// }
+// /*Задача 12*/
+// /*Задача 13*/
+// /*Задача 14*/
+// /*Задача 15*/
+// /*Задача 16*/
 
