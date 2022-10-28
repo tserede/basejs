@@ -51,39 +51,107 @@
 // }else console.log("false");
 // }
 // num(-6);
-/*Задача 8*/
-function isNumberRange(a) {
-  if (a > 0 && a < 10) {
-    return true;
-  } else return false;
-}
-console.log(isNumberRange(5));
+// /*Задача 8*/
+// function isNumberRange(a) {
+//   if (a > 0 && a < 10) {
+//     return true;
+//   } else return false;
+// }
 // /*Задача 9*/
 // let arr=[5,76,44,9,2,7,9];
-// function getArr{
-//   if isNumberRange=true
+// let arrResult=[];
+// for(i=0;i<arr.length; i++){
+//   if (isNumberRange(arr[i])===true){
+//     arrResult.push(arr[i]);
+//   }
 // }
+// console.log(arrResult);
+
+// /*Задача 10*/
+// function getDigitsSum(num){
+//   const str=`${num}`;
+//   let result=0;
+// for(let i=0; i<str.length; i+=1){
+//  result+=+str[i];
+// } return result;
+// }
+// console.log(getDigitsSum(567));
 /*Задача 10*/
-// const getDigitsSum = (num) => {
+// let getDigitsSum = (num) => {
 //   const str=`${num}`;
 //   let result=0;
 //   for(let i=0; i<str.length; i+=1){
 //     result+=+str[i];// = быстро переводит строку в число
 //      }   return result;
-    
-// }
+//  }
 // console.log(getDigitsSum(678));
+// /*Задача11*/
+// function filterYears(){
+//   let result=[];
+//    for(let i=1; i<=2020; i++){
+//     if(getDigitsSum(i)===13){
+//       result.push(i);
+//     }
+//   }
+//   return result;
+// } ;
+// console.log(filterYears());
 // /*Задача 11*/
 // const filterYears=()=>{
 //   let result=[];
 //   for(let i=1; i<=2020; i+=1){
-    
+//   if(getDigitsSum(i)===13){
+//     result.push(i);
 //   }
-
 // }
+// return result;
+// } ;
+// console.log(filterYears());
 // /*Задача 12*/
+// const isEven=(a)=>{
+//   if(a%2===0){
+//     return true;
+//   }
+//   // else { console.log(false);}
+//   };
+
+// // console.log(isEven(10));
+// // isEven(15);
 // /*Задача 13*/
+// function filterDigit(){
+// let arr=[5,5,8,3,9,46,27,54,96,77];
+// let result=[];
+
+// for(i=0; i<arr.length; i++){
+
+//     if(isEven(arr[i])===true){
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(filterDigit());
 // /*Задача 14*/
-// /*Задача 15*/
-// /*Задача 16*/
+// const getDivisors=(a)=>{
+//   let result=[];
+//   for(let i=0; i<=a; i++){
+//     if(a%i===0){
+//       result.push(i);
+//     }
+//   }
+//     console.log(result);
+// }
+// getDivisors(10);
+/*Задача 15*/
+let sumDigit = (num) => {
+  const str = `${num}`;
+  let result = 0;
+  if (result>9){
+  for (let i = 0; i < str.length; i++) {
+    result += +str[i];
+  }
+}
+  return result;
+}
+console.log(sumDigit(567));
 
