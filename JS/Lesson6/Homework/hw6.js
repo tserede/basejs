@@ -25,9 +25,10 @@
 // Задача 5
 const capitalize=(str)=>{
     arr=str.split(" ");
-//  let arrowStr=[];
-//  for(let i=0;i<stringToarroy(str)[i];i++){
-//     let a=StructStr(stringToarroy(str)[i]);
+    let arrowStr=[];
+    for(let i=0;i<arr.lenght;i++){
+       a=arr[i]
+       strS[0].toUpperCase()+str.substr(1,str.length
 //     arrowStr+=a;
 //  }
 
