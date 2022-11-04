@@ -150,15 +150,17 @@
 // return getDigitsSum(num);
 // }
 // console.log(sumDigit(567));
-/*Задача 16*/
-const strPolindrom=(str)=>{
-  let str1='';
-  for(let i=str.length;i>=0;i--){
-    str1+=str[i];
-  }
-  if(str==str1){
-    console.log("true");
-  } else console.log("false");
-}
-console.log(strPolindrom("потоп"));
+// /*Задача 16*/
+// const strPolindrom=(str)=>{
+//   let str1="";
+//   for(let i=str.length-1;i>=0;i--){
+//     str1+=str[i];
+//   }
+//   if(str==str1){
+//     return true
+//   } else{
+//     return false;
+//   }
+// }
+// console.log(strPolindrom("потоп"));
 
