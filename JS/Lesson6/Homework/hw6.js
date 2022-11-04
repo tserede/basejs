@@ -22,19 +22,20 @@
 //    console.log(str[0].toUpperCase()+str.substr(1,str.length));
 //}
 // StructStr("слово");
-// // Задача 5
-// const capitalize=(str)=>{
-//     arr=str.split(" ");
-//     let arrowStr=[];
-//     for(let i=0;i<arr.lenght;i++){
-//        a=arr[i]
-//        strS[0].toUpperCase()+str.substr(1,str.length
-// //     arrowStr+=a;
-// //  }
+// Задача 5
+const capitalize=(str)=>{
+    let arr=str.split(" ");
+    let arrowStr=[];
+    for(let i=0;i<arr.lenght;i++){
+       let a=arr[i]
+       let b=a[0].toUpperCase()+a.substr(1,a.length);
+       arrowStr.push(b);
+    
+ }
+ return arrowStr;
 
-//  console.log(arr);
-// };
-// capitalize("Белеет парус одинокий");
+};
+console.log(capitalize("Белеет парус одинокий"));
 // //7
 // const charArr=[".",",","-","/","!","&","?","*"];
 // const removeChar=(str)=>{
@@ -80,18 +81,18 @@
 //     return result;
 // }
 // console.log(initSnake("CurrentUserSecondName"));
-//16
-const getSubstr=(str,char,pos)=>{
-    if(str.includes(char)){
-if(pos==="before"){
-return str.slice(0,str.indexOf(char));
-}
-if(pos==="after"){
-    return str.slice(str.indexOf(char));
+// //16
+// const getSubstr=(str,char,pos)=>{
+//     if(str.includes(char)){
+// if(pos==="before"){
+// return str.slice(0,str.indexOf(char));
+// }
+// if(pos==="after"){
+//     return str.slice(str.indexOf(char));
 
 
-}
-    }
-    return `Символ ${char} отсутствует в строке ${str}`;
-};
-console.log(getSubstr("My name Alex!", "b", "after"));
+// }
+//     }
+//     return `Символ ${char} отсутствует в строке ${str}`;
+// };
+// console.log(getSubstr("My name Alex!", "b", "after"));
