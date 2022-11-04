@@ -146,12 +146,13 @@
 let sumDigit = (num) => {
   const str = `${num}`;
   let result = 0;
-  if (result>9){
   for (let i = 0; i < str.length; i++) {
     result += +str[i];
+    if(result<9){
+      return result;
+    }
   }
 }
-  return result;
-}
+
 console.log(sumDigit(567));
 
