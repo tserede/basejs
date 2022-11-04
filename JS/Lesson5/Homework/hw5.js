@@ -142,17 +142,23 @@
 //     console.log(result);
 // }
 // getDivisors(10);
-/*Задача 15*/
-let sumDigit = (num) => {
-  const str = `${num}`;
-  let result = 0;
-  for (let i = 0; i < str.length; i++) {
-    result += +str[i];
-    if(result<9){
-      return result;
-    }
+// /*Задача 15*/
+// const sumDigit = (num) =>{
+// if(getDigitsSum(num)>9){
+//   return sumDigit(getDigitsSum(num));
+// }
+// return getDigitsSum(num);
+// }
+// console.log(sumDigit(567));
+/*Задача 16*/
+const strPolindrom=(str)=>{
+  let str1='';
+  for(let i=str.length;i>=0;i--){
+    str1+=str[i];
   }
+  if(str==str1){
+    console.log("true");
+  } else console.log("false");
 }
-
-console.log(sumDigit(567));
+console.log(strPolindrom("потоп"));
 

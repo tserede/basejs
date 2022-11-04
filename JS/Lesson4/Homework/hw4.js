@@ -213,7 +213,7 @@
 // console.log(sum);
 // let sum=0;
 // for(a=1;a<=100;a++){
-//    sm=sum+a;
+//    sum=sum+a;
 // }
 // console.log(sum);
 /*Работа с for для массивов */
