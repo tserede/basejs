@@ -22,21 +22,32 @@
 //    console.log(str[0].toUpperCase()+str.substr(1,str.length));
 //}
 // StructStr("слово");
-// Задача 5
-const capitalize=(str)=>{
-    let arr=str.split(" ");
-    let arrowStr=[];
-    for(let i=0;i<arr.lenght;i++){
-       let a=arr[i]
-       let b=a[0].toUpperCase()+a.substr(1,a.length);
-       arrowStr.push(b);
-    
- }
- return arrowStr;
+// // Задача 5
+// const capitalize=(str)=>{
+//     let arr=str.split(" ");
+//     let result="";
+//     for(let i=0;i<arr.length;i++){
+//        let a=arr[i]
+//        let b=a[0].toUpperCase()+a.substr(1,a.length);
+//        result+=b+" ";
+//  }
+//  return result;
 
-};
-console.log(capitalize("Белеет парус одинокий"));
-// //7
+// };
+// console.log(capitalize("Белеет парус одинокий"));
+// // Задача 6
+// const changeRegistr=(str)=>{
+//     result="";
+//     for(let i=0;i<str.length;i++){
+//      if(str[i]===str[i].toLowerCase()){
+//         result+=str[i].toUpperCase();
+//      } else {
+//         result+=str[i].toLowerCase();
+//      }
+//     } return result;
+// }
+// console.log(changeRegistr("КаЖдЫй ОхОтНиК"));
+// //7!
 // const charArr=[".",",","-","/","!","&","?","*"];
 // const removeChar=(str)=>{
 //     for(let i=0; i<charArr.length; i++){
@@ -67,7 +78,7 @@ console.log(capitalize("Белеет парус одинокий"));
 //     return result;
 // };
 // console.log(removeChar("vjjsd7&@%?fsffgvs.,"));
-// 12
+// 12!
 // const camelCase="CurrentUserSecondName";
 // const initSnake=(str)=>{
 //     let result="";
@@ -81,7 +92,7 @@ console.log(capitalize("Белеет парус одинокий"));
 //     return result;
 // }
 // console.log(initSnake("CurrentUserSecondName"));
-// //16
+// //16!
 // const getSubstr=(str,char,pos)=>{
 //     if(str.includes(char)){
 // if(pos==="before"){
