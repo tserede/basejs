@@ -256,11 +256,26 @@
 //     break;
 //   }
 // }
-/*Задача 4*/
-let arr=[10,20,30,50,235,3000];
-for(let i=0;i<arr.length; i++){
-    let str=String(arr[i]);
-    if(str[0]==1||str[0]==5||str[0]==2){
-        console.log(arr[i]);
-    }
+// /*Задача 4*/
+// let arr=[10,20,30,50,235,3000];
+// for(let i=0;i<arr.length; i++){
+//     let str=String(arr[i]);
+//     if(str[0]==1||str[0]==5||str[0]==2){
+//         console.log(arr[i]);
+//     }
+// }
+// /*Задача 5*/
+// let arr=[1,2,3,4,5,6,7,8,9];
+// result="-";
+// for(let i=0;i<arr.length;i++){
+//  result+=String(arr[i])+"-"
+// } 
+// console.log(result);
+/*Задача 6*/
+let n=1000;
+i=0
+while(n>50){
+    n=n/2;
+    i=i+1;
 }
+console.log(`Результат ${n}.Количество итераций ${i}`);
