@@ -129,9 +129,39 @@
 
 
 // Практика
-// Задача 1
-сonst user2={name: "Ivan", age: 18, city: "London"};
-const user2=Object.assign(user2, {favouriteColor: blue})
+// // Задача 1
+// let user1={name: "Ivan", age: 18};
+// const user2=Object.assign({favouriteColor: "blue"}, user1);
+// user2.city="NN";
+// let user3={...user1};
+// user3.country="RF";
+// console.log(user1);
+// console.log(user2);
+// console.log(user3);
+// // Задача 2
+// const evenSum=(...args)=>{
+//     let result=0
+// for(let value of args){
+//     if(value%2===0){
+//         result+=value;
+//     }
+
+// }
+// return result;
+// }
+// console.log(evenSum(6,9,6));
+
+// // Задача 3
+// const filterArrow=(arr1,arr2)=>{
+//     let result=[];
+//     for(let value of arr1){
+//         if(arr2.includes(value)){
+//             result.push(value);
+//         }
+//     }
+//     return result;
+// }
+// console.log(filterArrow([1,4,5,3,9],[3,44,9,0]))
 
 
 
