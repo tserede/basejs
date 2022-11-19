@@ -98,12 +98,17 @@
 function CreateUser(userName, userAge){
     this.name=userName;
     this.age=userAge;
+    this.sayHi=function(){
+        console.log(`Приветбменя зовут ${this.name}`);
+    }
 }
 const firstUser=new CreateUser("Alex", 26);
 const secondUser=new CreateUser("Tony", 24);
 const thirdUser=new CreateUser("Ivan", 15);
 console.log(firstUser,secondUser,thirdUser);
 
+
+secondUser.sayHi();
 
 
 
