@@ -95,21 +95,69 @@
 
 
 
-function CreateUser(userName, userAge){
-    this.name=userName;
-    this.age=userAge;
-    this.sayHi=function(){
-        console.log(`Приветбменя зовут ${this.name}`);
+// function CreateUser(userName, userAge){
+//     this.name=userName;
+//     this.age=userAge;
+//     this.sayHi=function(){
+//         console.log(`Привет, меня зовут ${this.name}`);
+//     }
+// }
+// const firstUser=new CreateUser("Alex", 26);
+// const secondUser=new CreateUser("Tony", 24);
+// const thirdUser=new CreateUser("Ivan", 15);
+// console.log(firstUser,secondUser,thirdUser);
+
+
+// secondUser.sayHi();
+
+
+// function PostCard(from, to){
+//  this.from=from;
+//  this.to=to;
+//  this.show=function(){
+//     console.log(`Открытка из ${this.from} в ${this.to}`)
+//  }
+// }
+// PostCard.prototype.setFrom=function(fron){
+//     this.from=from;
+// }
+
+// const firstPostcard=new PostCard("London","Berlin");
+// const secondPostcard=new PostCard("NN","Moscow");
+
+// firstPostcard.show();
+// secondPostcard.show();
+// firstPostcard
+
+// доделать
+
+
+class People{
+    constructor(name,surName){
+        this.name=name;
+        this.surName=surName;
+    }
+    getFullName(){
+        return `${this.name}:${this.surName}`;
     }
 }
-const firstUser=new CreateUser("Alex", 26);
-const secondUser=new CreateUser("Tony", 24);
-const thirdUser=new CreateUser("Ivan", 15);
-console.log(firstUser,secondUser,thirdUser);
+const firstPeople = new People("Alex","Ivanov");
+console.log(firstPeople.getFullName());
+
+class Worker extends People{
+    constructor(name,surName,rate,day){
+        super(name,surName)
+        this.day=day;
+        this.rate=rate;
+    }
 
 
-secondUser.sayHi();
+getSallary(){
+    return `${this.getFullName()} получил ${this.rate}*${this.day}`;
+}
+}
+const firstWorker=new Worker("Alex","Petrov",500,20)
+const secondWorker=new Worker("Alex","Petrov",500,20)
 
-
-
- 
+console.log(firstWorker.getSallary()) ;
+console.log(secondWorker.getSallary()) ;

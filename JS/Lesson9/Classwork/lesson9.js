@@ -1,4 +1,4 @@
-// console.log(this);
+console.log(this);
 
 // function test(){
 //     console.log(this);
@@ -58,36 +58,36 @@
 
 
 
-const town = {
-    name: "Moscow",
-    population: "25 mln",
-    getName: function () {
-      console.log(this.name);
-      return this.name;
-    },
-    getPopulation: function () {
-      console.log(this.population);
-      return this.population;
-    },
+// const town = {
+//     name: "Moscow",
+//     population: "25 mln",
+//     getName: function () {
+//       console.log(this.name);
+//       return this.name;
+//     },
+//     getPopulation: function () {
+//       console.log(this.population);
+//       return this.population;
+//     },
   
-    setAnyValue: function (key, value) {
-      this[key] = value;
-    },
-  };
-  const town2={
-    name: "London",
-    population: "5 mln"
-  }
-//   town.getName();
-//   town.setAnyValue("name", "London");
-//   town.setAnyValue("country", "UK");
-//   town.getName();
+//     setAnyValue: function (key, value) {
+//       this[key] = value;
+//     },
+//   };
+//   const town2={
+//     name: "London",
+//     population: "5 mln"
+//   }
+// //   town.getName();
+// //   town.setAnyValue("name", "London");
+// //   town.setAnyValue("country", "UK");
+// //   town.getName();
   
-//   console.log(town);
-town.getName.call(town2);
-town.getPopulation.call(town2);
+// //   console.log(town);
+// town.getName.call(town2);
+// town.getPopulation.call(town2);
 
-const bound=town.setAnyValue.bind(town2);
-bound("name", "Paris");
-bound("country", "France");
-console.log(town2)
+// const bound=town.setAnyValue.bind(town2);
+// bound("name", "Paris");
+// bound("country", "France");
+// console.log(town2)
