@@ -1,33 +1,47 @@
-console.log(this);
+// console.log(this);
 
 // function test(){
 //     console.log(this);
 // }
 // test();
+// function example() {console.log(this);}
+// const testObject = {
+// testMethod: example,
+// }
+// testObject.testMethod();
 
-// const town = {
-//     name: "Moscow",
-//     population: "25 mln",
-//     getName: function () {
-//       console.log(this.name);
-//       return this.name;
-//     },
-//     getPopulation: function () {
-//       console.log(this.population);
-//       return this.population;
-//     },
+// const persona={
+//   name: 'Alex',
+//   age: '26',
+//   getName: function(){
+//     console.log(this.name);
+//   }
+// }
+// persona.getName()
+
+const town = {
+    name: "Moscow",
+    population: "25 mln",
+    getName: function () {
+      console.log(this.name);
+      return this.name;
+    },
+    getPopulation: function () {
+      console.log(this.population);
+      return this.population;
+    },
   
-//     setAnyValue: function (key, value) {
-//       this[key] = value;
-//     },
-//   };
+    setAnyValue: function(key, value) {
+      this[key] = value;
+    },
+  };
   
-//   town.getName();
-//   town.setAnyValue("name", "London");
-//   town.setAnyValue("country", "UK");
-//   town.getName();
+  town.getName();
+  town.setAnyValue("name", "London");
+  town.setAnyValue("country", "UK");
+  town.getName();
   
-//   console.log(town);
+  console.log(town);
 
 
 // const user1={name:"Vasya", surName: "Ivanov"};
