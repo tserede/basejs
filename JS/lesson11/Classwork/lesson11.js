@@ -17,6 +17,7 @@
 // const listItem=document.querySelector("li+.active");
 // const listItems=document.querySelectorAll(".list_item");
 // console.log(listItem,listItems);
+
 // const header=document.querySelector("header");
 // console.log(header.innerHTML='<h3>NEW TITLE</h3>');
 
@@ -24,12 +25,16 @@
 // const footer=document.querySelector("footer");
 // footer.outerHTML="<div class='footer'><p>HELLO FOOTER</p></div>";
 // console.log(footer.outerHTML);
+
 // const addButton=document.getElementById("add_button");
 // addButton.style.color="red";
 // addButton.style.width="400px";
+
 // const list=document.querySelector("ul");
 // list.classList.add("active");
 // console.log(list.className);
+
+
 // const newListItem=document.createElement("li");
 // newListItem.className="list_item";
 // newListItem.textContent="New Element";
@@ -50,27 +55,27 @@
 
 //  themeBtn.onclick=first;
 //  themeBtn.onclick=second;
-// // themeBtn.onclick=function(){
-// //     first();
-// //     second();   
-// //     };
-//     themeBtn.addEventListener("click",first);
-//     themeBtn.addEventListener("click",second);
-//     themeBtn.removeEventListener("click",second);
+// themeBtn.onclick=function(){
+//     first();
+//     second();   
+//     };
+    // themeBtn.addEventListener("click",first);
+    // themeBtn.addEventListener("click",second);
+    // themeBtn.removeEventListener("click",second);
 
 
-// const themeBtn=document.getElementById("theme_button");
-//  const themeToggle=function(){
-//     const body=document.body;
-//     body.classList.toggle("light_theme");
-//     if(body.classList.contains("light_theme")){
-//         themeBtn.textContent="Темная тема";
-//     } else{
-//         themeBtn.textContent="Светлая тема";
-//     }
+const themeBtn=document.getElementById("theme_button");
+ const themeToggle=function(){
+    const body=document.body;
+    body.classList.toggle("light_theme");
+    if(body.classList.contains("light_theme")){
+        themeBtn.textContent="Темная тема";
+    } else{
+        themeBtn.textContent="Светлая тема";
+    }
     
-//  };
-//  themeBtn.addEventListener("click",themeToggle);
+ };
+ themeBtn.addEventListener("click",themeToggle);
 //  const content=document.querySelector(".content");
 //  content.addEventListener("click",()=>console.log("content"));
 //  const list =document.querySelector(".list");
