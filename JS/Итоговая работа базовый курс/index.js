@@ -1,11 +1,11 @@
 const body = document.body;
 console.log(body);
 
+
 // wrapper
 const wrapper = document.createElement("div");
 body.append(wrapper);
 wrapper.className = "wrapper";
-
 
 
     // header
@@ -23,8 +23,9 @@ newTitle.style.color = "red";
     // Кнопка
 const buttonOne= document.createElement("button");
 wrapper.append(buttonOne);
-buttonOne.className = "btn";
-// button.id="theme button";
+buttonOne.className = "themeButton";
+buttonOne.id="theme_button"
+buttonOne.classList.add("btn");
 buttonOne.textContent = "Темная тема";
 
     // Контейнер
@@ -39,30 +40,72 @@ section.className = "content";
             //Обертка формы добавления задачи
 const wrapperAdd=document.createElement("wrapperAdd");
 content.append(wrapperAdd);
-section.className = "wrapperAdd";
+wrapperAdd.className = "wrapperAdd";
                 // Поле ввода задачи
 const input=document.createElement("input");
 wrapperAdd.append(input);
 input.type="text";
+input.className="input";
                 // Кнопка добавления задачи
 const buttonAdd=document.createElement("button");
 wrapperAdd.append(buttonAdd);
 buttonAdd.textContent="Добавить"
 buttonAdd.className = "buttonAdd";
+buttonAdd.classList.add("btn");
             //Список
 const list=document.createElement("ul")
 content.append(list);
 list.className = "list";
+
 
                 //Обертка элемента списка
 const wrapperListItem=document.createElement("wrapper");
 list.append(wrapperListItem);
 wrapperListItem.className = "wrapperListItem";
 
-const listItem=document.createElement("li");
-wrapperListItem.append(listItem);
-listItem.textContent="Купить продукты";
+const createList=()=>{
+    const itemArr=["Купить игрушки", "Нарядить елку","Повесить гирлянду"];
+    for(let val of itemArr){
+        const listItem=document.createElement("li");
+        listItem.textContent=val;
+        wrapperListItem.append(listItem);
+        listItem.className="li";
+        listItem.style.fontSize="25px"
+        listItem.style.margin="15px"
+        console.log(listItem.textContent);
+    }
+};
+createList();
 
+const themeBtn=document.getElementById("theme_button");
+ const themeToggle=function(){
+    const body=document.body;
+    body.classList.toggle("light_theme");
+    if(body.classList.contains("light_theme")){
+        themeBtn.textContent="Темная тема";
+    } else{
+        themeBtn.textContent="Светлая тема";
+    }
+    
+ };
+ themeBtn.addEventListener("click",themeToggle);
+
+
+//                     //Элемент 1
+// const listItem=document.createElement("li");
+// wrapperListItem.append(listItem);
+// listItem.textContent="Купить продукты";
+// listItem.className="li"
+
+// const blockDelete=document.createElement("div");
+// wrapperListItem.append(blockDelete);
+// blockDelete.className="blockDelete";
+
+// const imageDelete=document.createElement("p");
+// blockDelete.append(imageDelete);
+// imageDelete.className="imageDelete";
+
+//                     
 
 
 
