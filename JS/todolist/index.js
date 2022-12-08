@@ -1,7 +1,6 @@
-require("./func.js")
+import { createList, themeToggle} from "./func.js";
 const body = document.body;
 console.log(body);
-
 
 // wrapper
 const wrapper = document.createElement("div");
@@ -45,8 +44,11 @@ wrapperAdd.className = "wrapperAdd";
                 // Поле ввода задачи
 const input=document.createElement("input");
 wrapperAdd.append(input);
+input.id="input";
 input.type="text";
 input.className="input";
+
+
                 // Кнопка добавления задачи
 const buttonAdd=document.createElement("button");
 wrapperAdd.append(buttonAdd);
@@ -54,10 +56,12 @@ buttonAdd.textContent="Добавить"
 buttonAdd.className = "buttonAdd";
 buttonAdd.id="buttonAdd";
 buttonAdd.classList.add("btn");
+
             //Список
 const list=document.createElement("ul")
 content.append(list);
 list.className = "list";
+list.id="list";
 
 
                 //Обертка элемента списка
@@ -66,24 +70,10 @@ list.append(wrapperListItem);
 wrapperListItem.className = "wrapperListItem";
 
 
-
-ScriptModule.createList();
-console.log(ScriptModule.createList());
-
-
-
+createList();
 const themeBtn=document.getElementById("theme_button");
- const themeToggle=function(){
-    const body=document.body;
-    body.classList.toggle("light_theme");
-    if(body.classList.contains("light_theme")){
-        themeBtn.textContent="Темная тема";
-    } else{
-        themeBtn.textContent="Светлая тема";
-    }
-    
- };
- themeBtn.addEventListener("click",themeToggle);
+themeBtn.addEventListener("click",themeToggle);
+
 
  const btnAdd=document.getElementById("buttonAdd");
  function createListItem(){
@@ -96,13 +86,6 @@ const themeBtn=document.getElementById("theme_button");
  btnAdd.addEventListener("click",createListItem)
  
 
-
-//                     //Элемент 1
-// const listItem=document.createElement("li");
-// wrapperListItem.append(listItem);
-// listItem.textContent="Купить продукты";
-// listItem.className="li"
-
 // const blockDelete=document.createElement("div");
 // wrapperListItem.append(blockDelete);
 // blockDelete.className="blockDelete";
@@ -110,8 +93,7 @@ const themeBtn=document.getElementById("theme_button");
 // const imageDelete=document.createElement("p");
 // blockDelete.append(imageDelete);
 // imageDelete.className="imageDelete";
-
-//                     
+      
 
 
 
