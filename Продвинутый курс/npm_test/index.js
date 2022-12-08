@@ -40,6 +40,7 @@
 // const result=await import("./script.js")
 // result.sayHello();
 require("./script.js");
+console.log("Hello");
 
 
 
