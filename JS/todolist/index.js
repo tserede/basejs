@@ -1,4 +1,4 @@
-import * as ScriptModule from './func.mjs';
+import * as ScriptModule from './func.js';
 const body = document.body;
 console.log(body);
 
