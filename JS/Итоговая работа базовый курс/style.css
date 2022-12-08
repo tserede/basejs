@@ -9,7 +9,6 @@ body {
     color: var(--text-color);
     
   }
-  
   * {
     margin: 0;
     padding: 0;
@@ -28,8 +27,8 @@ body {
   .btn {
     cursor: pointer;
     border-radius: 3px;
-    border:1px solid grey;
-    color:rgb(63, 60, 60) ;
+    border:1px solid rgb(146, 145, 145);
+    color:rgb(94, 91, 91) ;
     font-size: 16px;
     font-weight:bold;
     text-align:center;
@@ -41,6 +40,9 @@ body {
     width: 300px;
     border-radius: 3px;
     border:1px solid grey;
+    color: #454141;
+    font-size: 16px;
+    font-weight:bold;
     
   }
   .wrapperAdd{
@@ -88,3 +90,8 @@ body {
     justify-content: space-between;
     height: 500px;
   }
+.li{
+  margin: 20px;
+  font-size: 25px;
+
+}
