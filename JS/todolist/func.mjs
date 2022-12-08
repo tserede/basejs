@@ -1,5 +1,5 @@
 
-const createList=()=>{
+export const createList=()=>{
     const itemArr=["Купить игрушки", "Нарядить елку","Повесить гирлянду"];
     for(let val of itemArr){
         const listItem=document.createElement("li");
@@ -34,4 +34,3 @@ const createList=()=>{
 //  btnAdd.addEventListener("click",createListItem)
  
 
-export {createList}

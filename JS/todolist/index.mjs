@@ -1,4 +1,4 @@
-import * as ScriptModule from "./func.mjs";
+import * as ScriptModule from './func.mjs';
 const body = document.body;
 console.log(body);
 
@@ -67,8 +67,10 @@ wrapperListItem.className = "wrapperListItem";
 
 
 
-scriptModule.createList();
-console.log(scriptModule.createList());
+ScriptModule.createList();
+console.log(ScriptModule.createList());
+
+
 
 const themeBtn=document.getElementById("theme_button");
  const themeToggle=function(){
