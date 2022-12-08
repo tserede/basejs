@@ -1,5 +1,5 @@
 
-export const createList=()=>{
+const createList=()=>{
     const itemArr=["Купить игрушки", "Нарядить елку","Повесить гирлянду"];
     for(let val of itemArr){
         const listItem=document.createElement("li");
@@ -9,6 +9,7 @@ export const createList=()=>{
         console.log(listItem.textContent);
     }
 };
+
 // createList();
 // const themeBtn=document.getElementById("theme_button");
 //  const themeToggle=function(){

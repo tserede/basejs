@@ -34,11 +34,12 @@
 // import ("./script.js");
 
 
-console.log("hello");
-import ("./script.js").then((res)=>res.sayHello())
+// console.log("hello");
+// import ("./script.js").then((res)=>res.sayHello())
 
-const result=await import("./script.js")
-result.sayHello();
+// const result=await import("./script.js")
+// result.sayHello();
+require("./script.js");
 
 
 

@@ -1,4 +1,4 @@
-import * as ScriptModule from './func.js';
+require("./func.js")
 const body = document.body;
 console.log(body);
 
