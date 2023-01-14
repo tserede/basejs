@@ -94,7 +94,7 @@
 // helloFunc("Иванов", 'Иван');
 
 
-
+// Функции конструкторы
 // function CreateUser(userName, userAge){
 //     this.name=userName;
 //     this.age=userAge;
@@ -110,54 +110,59 @@
 
 // secondUser.sayHi();
 
+// Задача
+// Реализовать функцию конструктор для создания открыток. Функция должна создавать 
+// объект открытки со свойствами from, to и метод show(). Метод должен возвращать 
+// строку в которой будут указаны значения свойств  from и to.
+// Добавить в prototype создаваемого объекта метод заменяющий текущее значение  
+// свойства from на новое переданное значение.
 
-// function PostCard(from, to){
-//  this.from=from;
-//  this.to=to;
-//  this.show=function(){
-//     console.log(`Открытка из ${this.from} в ${this.to}`)
-//  }
+function PostCard(from, to){
+ this.from=from;
+ this.to=to;
+ this.show=function(){
+    console.log(`Открытка из ${this.from} в ${this.to}`)
+ }
+}
+PostCard.prototype.setFrom=function(from){
+    this.from=from;
+}
+
+const firstPostcard=new PostCard("London","Berlin");
+const secondPostcard=new PostCard("NN","Moscow");
+
+firstPostcard.show();
+secondPostcard.show();
+firstPostcard.setFrom(Paris);
+firstPostcard.show();
+
+
+// class People{
+//     constructor(name,surName){
+//         this.name=name;
+//         this.surName=surName;
+//     }
+//     getFullName(){
+//         return `${this.name}:${this.surName}`;
+//     }
 // }
-// PostCard.prototype.setFrom=function(fron){
-//     this.from=from;
+// const firstPeople = new People("Alex","Ivanov");
+// console.log(firstPeople.getFullName());
+
+// class Worker extends People{
+//     constructor(name,surName,rate,day){
+//         super(name,surName)
+//         this.day=day;
+//         this.rate=rate;
+//     }
+
+
+// getSallary(){
+//     return `${this.getFullName()} получил ${this.rate*this.day}`;
 // }
+// }
+// const firstWorker=new Worker("Alex","Petrov",500,20)
+// const secondWorker=new Worker("Alex","Petrov",500,20)
 
-// const firstPostcard=new PostCard("London","Berlin");
-// const secondPostcard=new PostCard("NN","Moscow");
-
-// firstPostcard.show();
-// secondPostcard.show();
-// firstPostcard
-
-// доделать
-
-
-class People{
-    constructor(name,surName){
-        this.name=name;
-        this.surName=surName;
-    }
-    getFullName(){
-        return `${this.name}:${this.surName}`;
-    }
-}
-const firstPeople = new People("Alex","Ivanov");
-console.log(firstPeople.getFullName());
-
-class Worker extends People{
-    constructor(name,surName,rate,day){
-        super(name,surName)
-        this.day=day;
-        this.rate=rate;
-    }
-
-
-getSallary(){
-    return `${this.getFullName()} получил ${this.rate}*${this.day}`;
-}
-}
-const firstWorker=new Worker("Alex","Petrov",500,20)
-const secondWorker=new Worker("Alex","Petrov",500,20)
-
-console.log(firstWorker.getSallary()) ;
-console.log(secondWorker.getSallary()) ;
+// console.log(firstWorker.getSallary()) ;
+// console.log(secondWorker.getSallary()) ;
